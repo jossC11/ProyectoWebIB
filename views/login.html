@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>🐾 Veterinaria</h1>
+                <p>Sistema de Gestión Veterinaria</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
+                
+                <div id="error-message" class="error-message" style="display: none;"></div>
+            </form>
+            
+            <div class="login-footer">
+    <p>¿No tienes cuenta? <a href="/registro.html">Regístrate aquí</a></p>
+    <p>Usuarios de prueba:</p>
+    <small>
+        Admin: admin@veterinaria.com<br>
+        Veterinario: veterinario@veterinaria.com<br>
+        Cliente: cliente@email.com<br>
+        Contraseña: 123456
+    </small>
+</div>
+        </div>
+    </div>
+    
+    <script src="/js/login.js"></script>
+</body>
+</html>

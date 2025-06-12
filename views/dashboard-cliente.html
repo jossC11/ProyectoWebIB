@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Cliente - Veterinaria</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>🐾 Panel Cliente</h1>
+            <button onclick="logout()" class="btn-logout">Cerrar Sesión</button>
+        </header>
+        <main class="dashboard-main">
+            <section>
+                <h2>Agendar Nueva Cita</h2>
+                <form id="form-nueva-cita">
+                    <div>
+                        <label for="mascota">Mascota:</label>
+                        <select id="mascota" name="mascota_id" required></select>
+                    </div>
+                    <div>
+                        <label for="veterinario">Veterinario:</label>
+                        <select id="veterinario" name="veterinario_id" required></select>
+                    </div>
+                    <div>
+                        <label for="fecha_cita">Fecha y Hora:</label>
+                        <input type="datetime-local" id="fecha_cita" name="fecha_cita" required>
+                    </div>
+                    <div>
+                        <label for="motivo">Motivo:</label>
+                        <input type="text" id="motivo" name="motivo" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Agendar Cita</button>
+                    <div id="mensaje-cita" style="margin-top:10px;"></div>
+                </form>
+            </section>
+            <section>
+                <h2>Mis Citas</h2>
+                <div id="citas-container"></div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/dashboard-cliente.js"></script>
+</body>
+</html>
